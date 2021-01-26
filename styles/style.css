@@ -1,0 +1,237 @@
+/*** The Header Section  ***/
+header {
+  background-color: rgba(238, 238, 238, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /* Logo section start */
+  /* Logo section end */
+  /* Nav links section*/
+  /*Nav-links End*/
+}
+
+header .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+}
+
+header .brand img {
+  height: 20px;
+  padding-right: 0.3em;
+}
+
+header .brand a {
+  text-decoration: none;
+  font-size: larger;
+  color: #bb2323;
+  font-weight: 700;
+}
+
+header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+}
+
+header .links ul li {
+  padding-right: 1em;
+}
+
+header .links ul li > a {
+  font-size: large;
+  color: #333333;
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+header .links ul li > a:hover {
+  color: #bb2323;
+  border-radius: 0.5em;
+  background-color: #e99d9d;
+}
+
+header .auth ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  list-style: none;
+}
+
+header .auth ul li {
+  padding-right: 0.5em;
+}
+
+header .auth ul li a {
+  text-decoration: none;
+}
+
+header .auth ul li a:hover {
+  color: #bb2323;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #f0f0f0;
+}
+
+main .purpose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background-image: url("../images/screen.png");
+  height: 100vh;
+}
+
+main .purpose .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+main .purpose .content {
+  padding: 1em;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .purpose .content > .description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 2em;
+  color: lavender;
+  padding: 1em;
+  line-height: 1.3em;
+  font-size: large;
+}
+
+main .purpose .content > .description > h2 {
+  padding-bottom: 1em;
+}
+
+main .purpose .content .form {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+  padding: 1em;
+}
+
+main .purpose .content .form > h2 {
+  padding-bottom: 1em;
+  color: white;
+}
+
+main .purpose .content .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .purpose .content .form form input {
+  width: 90%;
+  outline-width: 0;
+  border-radius: 0.5em;
+  padding: 0.7em;
+  margin: 0.3em;
+  background-color: #e0e0e0;
+  border: none;
+}
+
+main .purpose .content .form form button {
+  width: 40%;
+  margin: 0.3em;
+  border: none;
+  outline-width: 0;
+  padding: 0.7em;
+  border-radius: 1em;
+  background-color: #e99d9d;
+}
+
+main .purpose .content .form form button:hover {
+  cursor: pointer;
+  background-color: #bb2323;
+}
+
+main .team {
+  padding: 1em;
+}
+
+main .team h2 {
+  text-align: center;
+}
+
+main .team .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .team .container .img {
+  padding: 1em;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+}
+
+main .team .container .img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main .team .container .img img {
+  height: 15em;
+}
+/*# sourceMappingURL=style.css.map */

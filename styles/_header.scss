@@ -1,0 +1,66 @@
+/*** The Header Section  ***/
+header {
+  background-color: rgba($color: #eeeeee, $alpha: 0.5);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /* Logo section start */
+  & .brand {
+    display: flex;
+    padding: 1em;
+    & img {
+      height: 20px;
+      padding-right: 0.3em;
+    }
+    & a {
+      text-decoration: none;
+      font-size: larger;
+      color: #bb2323;
+      font-weight: 700;
+    }
+  }
+  /* Logo section end */
+
+  /* Nav links section*/
+  & .links {
+    display: flex;
+    & ul {
+      list-style: none;
+      display: flex;
+      padding: 1em;
+      & li {
+        padding-right: 1em;
+        & > a {
+          font-size: large;
+          color: #333333;
+          text-decoration: none;
+          padding: 0.5em;
+          &:hover {
+            color: #bb2323;
+            border-radius: 0.5em;
+            background-color: #e99d9d;
+          }
+        }
+      }
+    }
+  }
+
+  /*Nav-links End*/
+  & .auth ul {
+    display: flex;
+    padding: 1em;
+    list-style: none;
+    & li {
+      padding-right: 0.5em;
+      & a {
+        text-decoration: none;
+        &:hover {
+          color: #bb2323;
+        }
+      }
+    }
+  }
+}
