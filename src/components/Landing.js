@@ -31,7 +31,7 @@ function Landing() {
           <form>
             <input
               className="landing__right__input"
-              type="text"
+              type="email"
               placeholder="Email"
               required
             />
