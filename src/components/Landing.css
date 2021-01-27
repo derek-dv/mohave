@@ -13,6 +13,10 @@
 }
 
 .landing__button {
+  font-size: large;
+  text-decoration: none;
+  color: #000000;
+  padding: 0.3em;
   width: 70%;
   margin: 0.3em;
   border: none;
@@ -27,7 +31,6 @@
 .landing__button:hover {
   cursor: pointer;
   background-color: #bb2323;
-  transform: scale(1.05);
 }
 
 .landing__heading {

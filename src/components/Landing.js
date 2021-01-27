@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Landing.css";
 
-function Landing() {
+function Landing(props) {
   return (
     <div
       style={{ backgroundImage: "url(./images/screen.png)" }}
@@ -24,7 +24,9 @@ function Landing() {
             dolores nobis placeat natus harum corporis dolorem laudantium quod
             expedita!
           </p>
-          <button className="landing__button">View Available Houses</button>
+          <Link to="/listings" className="landing__button">
+            View Available Houses
+          </Link>
         </div>
         <div className="landing__right">
           <h2 className="landing__heading">Sign In</h2>

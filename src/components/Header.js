@@ -22,27 +22,27 @@ function Header() {
           </li>
 
           <li>
-            <Link className="header__link" to="/">
+            <Link className="header__link" to="/listings">
               LISTINGS
             </Link>{" "}
           </li>
           <li>
-            <Link className="header__link" to="/">
+            <Link className="header__link" to="/contact">
               CONTACT
             </Link>{" "}
           </li>
           <li>
-            <Link className="header__link" to="/">
+            <Link className="header__link" to="/about">
               ABOUT
             </Link>{" "}
           </li>
         </ul>
       </div>
       <div className="header__auths">
-        <Link className="header__auth" to="/">
+        <Link className="header__auth" to="/auth/login">
           Login
         </Link>
-        <Link className="header__auth" to="/">
+        <Link className="header__auth" to="/auth/register">
           Register
         </Link>
       </div>
