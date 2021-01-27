@@ -1,17 +1,19 @@
-import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Landing from "./components/Landing";
+import NotFound from "./pages/NotFound";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="app">
         <Header />
-        <Landing />
-        <Route exact path="/" component={Home} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route component={NotFound} />
+        </Switch>
         <Footer />
       </div>
     </BrowserRouter>

@@ -20,11 +20,7 @@ function Header() {
               HOME
             </Link>{" "}
           </li>
-          <li>
-            <Link className="header__link" to="/">
-              ABOUT
-            </Link>{" "}
-          </li>
+
           <li>
             <Link className="header__link" to="/">
               LISTINGS
@@ -33,6 +29,11 @@ function Header() {
           <li>
             <Link className="header__link" to="/">
               CONTACT
+            </Link>{" "}
+          </li>
+          <li>
+            <Link className="header__link" to="/">
+              ABOUT
             </Link>{" "}
           </li>
         </ul>
