@@ -1,6 +1,6 @@
 /*** The Header Section  ***/
 header {
-  background-color: rgba(238, 238, 238, 0.5);
+  background-color: rgba(238, 238, 238, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +77,7 @@ header .auth ul {
 }
 
 header .auth ul li {
-  padding-right: 0.5em;
+  padding-right: 1em;
 }
 
 header .auth ul li a {
@@ -97,6 +97,21 @@ html {
   font-family: monospace;
   margin: 0;
   padding: 0;
+}
+
+button {
+  width: 40%;
+  margin: 0.3em;
+  border: none;
+  outline-width: 0;
+  padding: 0.7em;
+  border-radius: 1em;
+  background-color: #bb2323;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #e99d9d;
 }
 
 main {
@@ -135,6 +150,9 @@ main .purpose .content {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .purpose .content > .description {
@@ -144,8 +162,9 @@ main .purpose .content > .description {
   border-radius: 2em;
   color: lavender;
   padding: 1em;
-  line-height: 1.3em;
+  line-height: 1.5em;
   font-size: large;
+  margin-right: 3em;
 }
 
 main .purpose .content > .description > h2 {
@@ -184,19 +203,18 @@ main .purpose .content .form form input {
   border: none;
 }
 
-main .purpose .content .form form button {
-  width: 40%;
-  margin: 0.3em;
-  border: none;
-  outline-width: 0;
-  padding: 0.7em;
-  border-radius: 1em;
-  background-color: #e99d9d;
+main .purpose .content .form form p {
+  color: white;
+  font-size: 1.1em;
 }
 
-main .purpose .content .form form button:hover {
-  cursor: pointer;
-  background-color: #bb2323;
+main .purpose .content .form form p a {
+  text-decoration: underline;
+  color: #f0cece;
+}
+
+main .purpose .content .form form p a:hover {
+  color: #bb2323;
 }
 
 main .team {
@@ -218,20 +236,40 @@ main .team .container {
           justify-content: center;
 }
 
-main .team .container .img {
+main .team .container a.img {
   padding: 1em;
   -webkit-transition: -webkit-transform 200ms ease-in;
   transition: -webkit-transform 200ms ease-in;
   transition: transform 200ms ease-in;
   transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+  text-decoration: none;
 }
 
-main .team .container .img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+main .team .container a.img:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
-main .team .container .img img {
+main .team .container a.img:hover img {
+  border-radius: 0.5em;
+}
+
+main .team .container a.img img {
   height: 15em;
+}
+
+footer {
+  background-color: #830b0b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: wheat;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,19 @@ html {
   margin: 0;
   padding: 0;
 }
-
+button {
+  width: 40%;
+  margin: 0.3em;
+  border: none;
+  outline-width: 0;
+  padding: 0.7em;
+  border-radius: 1em;
+  background-color: #bb2323;
+  &:hover {
+    cursor: pointer;
+    background-color: #e99d9d;
+  }
+}
 main {
   & .purpose {
     & .overlay {
@@ -24,13 +36,15 @@ main {
       position: absolute;
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       & > .description {
         flex: 1;
         border-radius: 2em;
         color: lavender;
         padding: 1em;
-        line-height: 1.3em;
+        line-height: 1.5em;
         font-size: large;
+        margin-right: 3em;
         & > h2 {
           padding-bottom: 1em;
         }
@@ -55,17 +69,15 @@ main {
             background-color: #e0e0e0;
             border: none;
           }
-          & button {
-            width: 40%;
-            margin: 0.3em;
-            border: none;
-            outline-width: 0;
-            padding: 0.7em;
-            border-radius: 1em;
-            background-color: #e99d9d;
-            &:hover {
-              cursor: pointer;
-              background-color: #bb2323;
+          & p {
+            color: white;
+            font-size: 1.1em;
+            & a {
+              text-decoration: underline;
+              color: #f0cece;
+              &:hover {
+                color: #bb2323;
+              }
             }
           }
         }
@@ -88,11 +100,15 @@ main {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      & .img {
+      & a.img {
         padding: 1em;
         transition: transform 200ms ease-in;
+        text-decoration: none;
         &:hover {
-          transform: scale(1.05);
+          transform: scale(1.08);
+          & img {
+            border-radius: 0.5em;
+          }
         }
         & img {
           height: 15em;
@@ -100,4 +116,13 @@ main {
       }
     }
   }
+}
+
+footer {
+  background-color: #830b0b;
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
 }
