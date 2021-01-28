@@ -5,18 +5,26 @@ import Header from "./components/Header";
 import NotFound from "./pages/NotFound";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import Contact from "./pages/Contact";
+import Listings from "./pages/Listings";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="app">
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/contact" component={Contact} />
-          <Route component={NotFound} />
-        </Switch>
-        <Footer />
+        <div className="app__header">
+          <Header />
+        </div>
+        <div className="app_body">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/listings" component={Listings} />
+            <Route component={NotFound} />
+          </Switch>
+        </div>
+        <div className="app__footer">
+          <Footer />
+        </div>
       </div>
     </BrowserRouter>
   );

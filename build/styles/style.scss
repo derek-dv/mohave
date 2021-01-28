@@ -1,0 +1,128 @@
+@import "header";
+html {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+button {
+  width: 40%;
+  margin: 0.3em;
+  border: none;
+  outline-width: 0;
+  padding: 0.7em;
+  border-radius: 1em;
+  background-color: #bb2323;
+  &:hover {
+    cursor: pointer;
+    background-color: #e99d9d;
+  }
+}
+main {
+  & .purpose {
+    & .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      min-height: 100%;
+      min-width: 100%;
+    }
+    & .content {
+      padding: 1em;
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      & > .description {
+        flex: 1;
+        border-radius: 2em;
+        color: lavender;
+        padding: 1em;
+        line-height: 1.5em;
+        font-size: large;
+        margin-right: 3em;
+        & > h2 {
+          padding-bottom: 1em;
+        }
+      }
+      & .form {
+        flex: 0.7;
+        padding: 1em;
+        & > h2 {
+          padding-bottom: 1em;
+          color: white;
+        }
+
+        & form {
+          display: flex;
+          flex-direction: column;
+          & input {
+            width: 90%;
+            outline-width: 0;
+            border-radius: 0.5em;
+            padding: 0.7em;
+            margin: 0.3em;
+            background-color: #e0e0e0;
+            border: none;
+          }
+          & p {
+            color: white;
+            font-size: 1.1em;
+            & a {
+              text-decoration: underline;
+              color: #f0cece;
+              &:hover {
+                color: #bb2323;
+              }
+            }
+          }
+        }
+      }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("../images/screen.png");
+    height: 100vh;
+  }
+  background-color: #f0f0f0;
+  & .team {
+    padding: 1em;
+    & h2 {
+      text-align: center;
+    }
+    & .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      & a.img {
+        padding: 1em;
+        transition: transform 200ms ease-in;
+        text-decoration: none;
+        &:hover {
+          transform: scale(1.08);
+          & img {
+            border-radius: 0.5em;
+          }
+        }
+        & img {
+          height: 15em;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #830b0b;
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+}

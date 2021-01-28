@@ -1,9 +1,19 @@
 .app {
-  box-sizing: border-box;
-  background-color: #f1f2f5;
   width: 100%;
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "body" "footer";
+  grid-template-rows: 5rem 1fr 5rem;
 }
 .app__body {
-  display: flex;
+  grid-area: body;
+}
+
+.app__header {
+  grid-area: header;
+}
+
+.app__footer {
+  grid-area: footer;
 }

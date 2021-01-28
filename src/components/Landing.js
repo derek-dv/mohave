@@ -4,10 +4,7 @@ import "./Landing.css";
 
 function Landing(props) {
   return (
-    <div
-      style={{ backgroundImage: "url(./images/screen.png)" }}
-      className="landing"
-    >
+    <div className="landing">
       <div className="overlay"></div>
       <div className="landing__content">
         <div className="landing__left">
