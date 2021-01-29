@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "body" "footer";
-  grid-template-rows: 5rem 2fr 5rem;
+  grid-template-rows: 4.3em 1fr 4em;
 }
 .app__body {
   grid-area: body;
@@ -12,7 +12,6 @@
 
 .app__header {
   grid-area: header;
-  margin-bottom: 2em;
 }
 
 .app__footer {
